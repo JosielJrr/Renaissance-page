@@ -1,0 +1,7 @@
+@import url(global.css);
+
+section ol {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

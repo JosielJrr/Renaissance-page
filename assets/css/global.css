@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    grid-template:
+        "header header header" auto
+        "sidebar main sidemar" auto
+        "footer footer footer" auto / 1fr 3fr 1fr;
+}
+
+header {
+    grid-area: header;
+    background-color: lightyellow;
+    border: 1px solid yellow;
+    border-radius: 20px;
+}
+
+header figure {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header figure img {
+    width: 150px;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    border: 1px solid yellow;
+    border-radius: 20px;
+    background-color: lightyellow
+}
+
+aside nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 90px 0px 0px 0px;
+}
+
+aside nav ul li {
+    list-style: none;
+    border: 1px solid yellow;
+    border-radius: 8px;
+    background-color: rgb(241, 241, 150);
+    padding: 5px;
+}
+
+aside nav ul li:hover {
+    border: 2px solid darkorange;
+    background-color: yellow;
+    font-weight: bold;
+}
+
+aside nav ul li:active {
+    background-color: darkorange;
+}
+
+aside nav ul li a {
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    grid-area: main;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    scroll-margin-top: 5rem;
+}
+
+section h2 {
+    padding: 15px 0px 0px 0px;
+}
+
+section a {
+    width: 60px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid darkorange;
+    border-radius: 8px;
+    background-color: rgb(241, 241, 150);
+    color: black;
+}
+
+section a:hover {
+    border: 2px solid darkorange;
+    background-color: yellow;
+    font-weight: bold;
+}
+
+section a:active {
+    background-color: darkorange;
+}
+
+section p {
+    text-align: justify;
+    text-indent: 40px;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightyellow;
+    border: 1px solid yellow;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    padding-top: 10px;
+}
+
+footer a {
+    width: 60px;
+    text-decoration: none;
+    text-align: center;
+    padding: 2px;
+    border: 1px solid darkorange;
+    border-radius: 8px;
+    background-color: rgb(241, 241, 150);
+    color: black;
+}
+
+footer a:hover {
+    border: 2px solid darkorange;
+    background-color: yellow;
+    font-weight: bold;
+}
+
+footer a:active {
+    background-color: darkorange;
+}
