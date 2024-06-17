@@ -14,13 +14,13 @@ body {
         "header header header" auto
         "sidebar main sidemar" auto
         "footer footer footer" auto / 1fr 3fr 1fr;
+    background-color: rgba(241, 241, 150, 0.699);
 }
 
 header {
     grid-area: header;
-    background-color: lightyellow;
-    border: 1px solid yellow;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 header figure {
@@ -30,16 +30,14 @@ header figure {
 }
 
 header figure img {
-    width: 150px;
+    width: 120px;
 }
 
 aside {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    border: 1px solid yellow;
     border-radius: 20px;
-    background-color: lightyellow
 }
 
 aside nav ul {
@@ -52,25 +50,25 @@ aside nav ul {
 
 aside nav ul li {
     list-style: none;
-    border: 1px solid yellow;
-    border-radius: 8px;
-    background-color: rgb(241, 241, 150);
-    padding: 5px;
+    border-radius: 10px;
+    padding: 6px;
+    background: radial-gradient(orange, orangered);
+    background-size: 400% 400%;
+    animation: gradient 3s infinite alternate;
 }
 
 aside nav ul li:hover {
-    border: 2px solid darkorange;
-    background-color: yellow;
-    font-weight: bold;
+    transform: scale(1.1);
 }
 
-aside nav ul li:active {
-    background-color: darkorange;
+aside nav ul li a:hover {
+    color: white;
 }
 
 aside nav ul li a {
     text-align: center;
     font-size: 1rem;
+    font-weight: bold;
     text-decoration: none;
     color: black;
 }
@@ -99,21 +97,16 @@ section a {
     width: 60px;
     text-decoration: none;
     text-align: center;
+    font-weight: bold;
     padding: 5px;
-    border: 1px solid darkorange;
-    border-radius: 8px;
-    background-color: rgb(241, 241, 150);
+    border-radius: 10px;
+    background-color: orange;
     color: black;
 }
 
 section a:hover {
-    border: 2px solid darkorange;
-    background-color: yellow;
-    font-weight: bold;
-}
-
-section a:active {
-    background-color: darkorange;
+    background-color: orangered;
+    color: white;
 }
 
 section p {
@@ -126,8 +119,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: lightyellow;
-    border: 1px solid yellow;
     border-radius: 20px;
     margin-top: 30px;
 }
@@ -140,19 +131,36 @@ footer a {
     width: 60px;
     text-decoration: none;
     text-align: center;
-    padding: 2px;
-    border: 1px solid darkorange;
+    padding: 5px;
     border-radius: 8px;
-    background-color: rgb(241, 241, 150);
+    background-color: orange;
     color: black;
 }
 
 footer a:hover {
-    border: 2px solid darkorange;
-    background-color: yellow;
+    background-color: orangered;
     font-weight: bold;
+    color: white;
 }
 
-footer a:active {
-    background-color: darkorange;
+header,
+aside,
+footer {
+    background: linear-gradient(-80deg, #FFC107, #C65A00);
+    background-size: 400% 400%;
+    animation: gradient 5s infinite alternate;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
