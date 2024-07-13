@@ -19,8 +19,9 @@ Além disso, há arquivos CSS para estilização e uma pasta `assets` contendo i
 
 ## Como Visualizar
 1. Clone o repositório:
-   ```bash
+   ```
    git clone  git clone https://github.com/JosielJrr/renaissance-page.git
+   ```
 2. Abra qualquer um dos arquivos HTML em seu navegador de preferência para visualizar o site.
 
 ## Sobre o Álbum
