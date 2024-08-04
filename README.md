@@ -28,7 +28,7 @@ Além disso, há arquivos CSS para estilização e uma pasta `assets` contendo i
 "Renaissance" é o oitavo álbum de estúdio de Beyoncé, lançado em 2022. O álbum é conhecido por sua variedade de gêneros musicais e sua abordagem inovadora.
 
 ## Notas Adicionais 
-Este site foi desenvolvido como parte de um projeto educacional para aprender HTML e que posteriormente foi melhorado com CSS graças aos conhecimentos adquiridos com as formações da Digital Innovation One. 
+Este site foi desenvolvido como parte de um projeto educacional para aprender HTML e que posteriormente foi melhorado com CSS graças aos conhecimentos adquiridos com as formações da [Digital Innovation One](https://www.dio.me/). 
 
 
    
